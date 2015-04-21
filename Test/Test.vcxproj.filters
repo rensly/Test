@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Classes">
+      <UniqueIdentifier>{0b47b2a5-a021-48d2-8677-324335b480a4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\TestParameters">
+      <UniqueIdentifier>{78b91e76-79fd-447d-961c-c9734150d335}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common">
+      <UniqueIdentifier>{1ed29ec4-59f9-4300-afdc-9cf31562729a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\TestCommon">
+      <UniqueIdentifier>{0a638092-b768-4c14-935f-40907338e0a8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\TestLanguage">
+      <UniqueIdentifier>{20a21311-da82-4d04-a24c-ac445bece17c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\TestStandard">
+      <UniqueIdentifier>{9fc379a3-add3-4129-92a7-25965ad27d1c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Main.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Classes\TestParameters\TestParameters.cpp">
+      <Filter>Classes\TestParameters</Filter>
+    </ClCompile>
+    <ClCompile Include="Classes\TestFactoryManager.cpp">
+      <Filter>Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\MyAssert.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\StdAfx.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Classes\TestCommon\TestCommon.cpp">
+      <Filter>Classes\TestCommon</Filter>
+    </ClCompile>
+    <ClCompile Include="Classes\TestLanguage\TestVirtualInheritance.cpp">
+      <Filter>Classes\TestLanguage</Filter>
+    </ClCompile>
+    <ClCompile Include="Classes\TestRegister.cpp">
+      <Filter>Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="Classes\TestStandard\TestStandard.cpp">
+      <Filter>Classes\TestStandard</Filter>
+    </ClCompile>
+    <ClCompile Include="Classes\TestLanguage\TestVirtualFunction.cpp">
+      <Filter>Classes\TestLanguage</Filter>
+    </ClCompile>
+    <ClCompile Include="Classes\TestStandard\TestTime.cpp">
+      <Filter>Classes\TestStandard</Filter>
+    </ClCompile>
+    <ClCompile Include="Classes\TestLanguage\TestAuto.cpp">
+      <Filter>Classes\TestLanguage</Filter>
+    </ClCompile>
+    <ClCompile Include="Classes\TestLanguage\TestConstructor.cpp">
+      <Filter>Classes\TestLanguage</Filter>
+    </ClCompile>
+    <ClCompile Include="Classes\TestLanguage\TestMemberFuncPtr.cpp">
+      <Filter>Classes\TestLanguage</Filter>
+    </ClCompile>
+    <ClCompile Include="Classes\TestStandard\TestSharedPtr.cpp">
+      <Filter>Classes\TestStandard</Filter>
+    </ClCompile>
+    <ClCompile Include="Classes\TestStandard\TestStdFunctionAndBind.cpp">
+      <Filter>Classes\TestStandard</Filter>
+    </ClCompile>
+    <ClCompile Include="Classes\TestStandard\TestMove.cpp">
+      <Filter>Classes\TestStandard</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Classes\Test.h">
+      <Filter>Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="Classes\TestParameters\TestParameters.h">
+      <Filter>Classes\TestParameters</Filter>
+    </ClInclude>
+    <ClInclude Include="Classes\TestDefine.h">
+      <Filter>Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="Classes\TestFactoryManager.h">
+      <Filter>Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\BaseType.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\MyAssert.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\StdAfx.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\TemplateClear.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\Type.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Classes\TestCommon\TestCommon.h">
+      <Filter>Classes\TestCommon</Filter>
+    </ClInclude>
+    <ClInclude Include="Classes\TestLanguage\TestVirtualInheritance.h">
+      <Filter>Classes\TestLanguage</Filter>
+    </ClInclude>
+    <ClInclude Include="Classes\TestStandard\TestStandard.h">
+      <Filter>Classes\TestStandard</Filter>
+    </ClInclude>
+    <ClInclude Include="Classes\TestLanguage\TestVirtualFunction.h">
+      <Filter>Classes\TestLanguage</Filter>
+    </ClInclude>
+    <ClInclude Include="Classes\TestStandard\TestTime.h">
+      <Filter>Classes\TestStandard</Filter>
+    </ClInclude>
+    <ClInclude Include="Classes\TestLanguage\TestAuto.h">
+      <Filter>Classes\TestLanguage</Filter>
+    </ClInclude>
+    <ClInclude Include="Classes\TestLanguage\TestConstructor.h">
+      <Filter>Classes\TestLanguage</Filter>
+    </ClInclude>
+    <ClInclude Include="Classes\TestLanguage\TestMemberFuncPtr.h">
+      <Filter>Classes\TestLanguage</Filter>
+    </ClInclude>
+    <ClInclude Include="Classes\TestStandard\TestSharedPtr.h">
+      <Filter>Classes\TestStandard</Filter>
+    </ClInclude>
+    <ClInclude Include="Classes\TestStandard\TestStdFunctionAndBind.h">
+      <Filter>Classes\TestStandard</Filter>
+    </ClInclude>
+    <ClInclude Include="Classes\TestStandard\TestMove.h">
+      <Filter>Classes\TestStandard</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

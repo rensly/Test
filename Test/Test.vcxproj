@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{3908E9E3-7F44-47D0-8C2F-080844FE70FD}</ProjectGuid>
+    <RootNamespace>Test</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>StdAfx.h</PrecompiledHeaderFile>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <MinimalRebuild>false</MinimalRebuild>
+      <AdditionalIncludeDirectories>.;./Common;./Classes;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Classes\TestCommon\TestCommon.cpp" />
+    <ClCompile Include="Classes\TestFactoryManager.cpp" />
+    <ClCompile Include="Classes\TestLanguage\TestAuto.cpp" />
+    <ClCompile Include="Classes\TestLanguage\TestConstructor.cpp" />
+    <ClCompile Include="Classes\TestLanguage\TestMemberFuncPtr.cpp" />
+    <ClCompile Include="Classes\TestLanguage\TestVirtualFunction.cpp" />
+    <ClCompile Include="Classes\TestLanguage\TestVirtualInheritance.cpp" />
+    <ClCompile Include="Classes\TestParameters\TestParameters.cpp" />
+    <ClCompile Include="Classes\TestRegister.cpp" />
+    <ClCompile Include="Classes\TestStandard\TestMove.cpp" />
+    <ClCompile Include="Classes\TestStandard\TestSharedPtr.cpp" />
+    <ClCompile Include="Classes\TestStandard\TestStandard.cpp" />
+    <ClCompile Include="Classes\TestStandard\TestStdFunctionAndBind.cpp" />
+    <ClCompile Include="Classes\TestStandard\TestTime.cpp" />
+    <ClCompile Include="Common\MyAssert.cpp" />
+    <ClCompile Include="Common\StdAfx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Classes\Test.h" />
+    <ClInclude Include="Classes\TestCommon\TestCommon.h" />
+    <ClInclude Include="Classes\TestDefine.h" />
+    <ClInclude Include="Classes\TestFactoryManager.h" />
+    <ClInclude Include="Classes\TestLanguage\TestAuto.h" />
+    <ClInclude Include="Classes\TestLanguage\TestConstructor.h" />
+    <ClInclude Include="Classes\TestLanguage\TestMemberFuncPtr.h" />
+    <ClInclude Include="Classes\TestLanguage\TestVirtualFunction.h" />
+    <ClInclude Include="Classes\TestLanguage\TestVirtualInheritance.h" />
+    <ClInclude Include="Classes\TestParameters\TestParameters.h" />
+    <ClInclude Include="Classes\TestStandard\TestMove.h" />
+    <ClInclude Include="Classes\TestStandard\TestSharedPtr.h" />
+    <ClInclude Include="Classes\TestStandard\TestStandard.h" />
+    <ClInclude Include="Classes\TestStandard\TestStdFunctionAndBind.h" />
+    <ClInclude Include="Classes\TestStandard\TestTime.h" />
+    <ClInclude Include="Common\BaseType.h" />
+    <ClInclude Include="Common\MyAssert.h" />
+    <ClInclude Include="Common\StdAfx.h" />
+    <ClInclude Include="Common\TemplateClear.h" />
+    <ClInclude Include="Common\Type.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
